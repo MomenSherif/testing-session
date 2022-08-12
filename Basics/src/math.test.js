@@ -1,4 +1,4 @@
-const { sum, subtract, sumAsync } = require('./math');
+import { sum, subtract, sumAsync } from './math.js';
 
 test('sum 1 + 2 to be 3', () => {
   const result = sum(1, 3);
@@ -16,4 +16,3 @@ test('subtract 4 - 2 to be 2', () => {
   const expected = 2;
   expect(result).toBe(expected);
 });
-
