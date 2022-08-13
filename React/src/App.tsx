@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Counter from './01-basics/Counter';
+import FavoriteNumber from './02-rich-example/FavoriteNumber';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
         >
           Learn React
         </a>
-        <Counter />
+        {/* <Counter /> */}
+        <FavoriteNumber />
       </header>
     </div>
   );
