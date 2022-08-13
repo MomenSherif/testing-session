@@ -4,6 +4,7 @@ import './App.css';
 import Counter from './01-basics/Counter';
 import FavoriteNumber from './02-rich-example/FavoriteNumber';
 import Posts from './03-call-server/Posts';
+import ProductCard from './04-context/ProductCard';
 
 function App() {
   return (
@@ -20,7 +21,14 @@ function App() {
         </a>
         {/* <Counter /> */}
         {/* <FavoriteNumber /> */}
-        <Posts />
+        {/* <Posts /> */}
+        <ProductCard
+          id={1}
+          title="Product title"
+          description="lorem ipsum"
+          price={2000}
+          onAddToCard={() => console.log('Added to cart')}
+        />
       </header>
     </div>
   );
